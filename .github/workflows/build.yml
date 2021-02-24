@@ -1,0 +1,10 @@
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - run: lsb_release -a
+name: build
+on:
+  push:
+    branches:
+      - "**"
