@@ -3,6 +3,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: lsb_release -a
+      - run: docker container ls
 name: build
 on:
   push:
