@@ -3,7 +3,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: lsb_release -a
-      - run: docker container ls
+      - run: docker run -t -d --name test_docker_persistent alekzonder/puppeteer:latest bash
 name: build
 on:
   push:
